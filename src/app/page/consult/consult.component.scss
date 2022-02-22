@@ -1,0 +1,61 @@
+.container{
+  .search{
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    width: 100%;
+    align-self: center;
+
+    .mat-form-field{
+      width: 50%;
+
+      font-size: 1.2rem;
+    }
+  }
+  .containerCard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem;
+
+    .card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+
+      .mat-card-header{
+        text-align: center;
+      }
+
+      .mat-card-content{
+        overflow: hidden;
+        max-height: 3rem;
+
+        .fade{
+          position: relative;
+          height: 150px;
+          overflow: hidden;
+
+          &::before{
+              content: ' ';
+
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+
+              background: linear-gradient(transparent 100px, white);
+          }
+
+      }
+      }
+
+      img{
+        align-self: center;
+        width: 80%;
+      }
+    }
+  }
+}

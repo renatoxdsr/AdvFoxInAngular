@@ -1,0 +1,33 @@
+.modal-title{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: rgb(9, 92, 245);
+}
+
+.modal-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.register{
+  margin-top: 1rem;
+
+  span{
+    cursor: pointer;
+    color: #2D9CDB
+  }
+}
+
+.modal-footer{
+  display: flex;
+  justify-content:center;
+}
+
+#area{
+  display: none;
+}
+
+#descricao{
+  display: none;
+}

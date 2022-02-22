@@ -1,0 +1,59 @@
+.container{
+  height: 100%;
+  width: 100%;
+
+  .search{
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    width: 100%;
+    align-self: center;
+
+    .mat-form-field{
+      width: 50%;
+
+      font-size: 1.2rem;
+    }
+  }
+
+  .slider{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    img{
+      width: 1000px !important;
+      height: 500px;
+    }
+  }
+
+  .nextConsult{
+    padding: 2rem;
+    .contentConsult{
+      display: flex;
+
+      span{
+        display: flex;
+        align-self: center;
+        font-weight: 700;
+        margin-left: auto;
+      }
+    }
+
+    .card{
+      width: 30%;
+      .mat-card-content{
+        display: flex;
+        align-self: center;
+        gap: 1rem;
+        p{
+          display: flex;
+          text-align: center;
+          margin: 0;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

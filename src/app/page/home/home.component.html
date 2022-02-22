@@ -1,0 +1,91 @@
+<main class="container">
+  <app-menu></app-menu>
+  <div class="search">
+    <mat-form-field appearance="fill">
+      <mat-label>
+        <mat-icon>search</mat-icon>
+        search
+      </mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+
+  <div class="slider">
+    <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+      <mdb-carousel-item>
+        <div class="view w-100">
+          <img class="d-block w-100" src="https://www.rotajuridica.com.br/wp-content/uploads/2020/06/advocacia.jpg" alt="First slide">
+          <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Advocacia por amor</h3>
+          <p>
+            A advocacia é uma profissão dos apaixonados pelo
+            Direito e,saber exercê-la, com dignidade e
+            honestidade, é um dever de consciência do
+            advogado.
+          </p>
+        </div>
+      </mdb-carousel-item>
+      <mdb-carousel-item>
+        <div class="view w-100">
+          <img class="d-block w-100" src="https://www.ultimatum.com.br/wp-content/uploads/2020/04/fundo.jpg" alt="Second slide">
+          <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Direito Civil</h3>
+          <p>
+            o Direito Civil é provavelmente a área mais complexa e extensa do
+            direito do Brasil, abordando todas as questões jurídicas de pessoas
+            naturais e físicas na esfera privada.
+          </p>
+        </div>
+      </mdb-carousel-item>
+      <mdb-carousel-item>
+        <div class="view w-100">
+          <img class="d-block w-100" src="https://images.jota.info/wp-content/uploads/2015/02/Fotolia_78357589_Subscription_Monthly_M-1024x553.jpg" alt="Third slide">
+          <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Direito do Consumidor</h3>
+          <p>
+            O direito do consumidor é o conjunto de regras e princípios
+            jurídicos que trata das relações de consumo, isto é, as relações
+            existentes entre o consumidor e o fornecedor de bens ou de serviços.
+          </p>
+        </div>
+      </mdb-carousel-item>
+    </mdb-carousel>
+  </div>
+
+  <div class="nextConsult">
+    <div class="contentConsult">
+      <h2>Next Consultation</h2>
+      <span>
+        All
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </span>
+    </div>
+    <div class="containerConsult">
+
+      <mat-card class="card" *ngFor="let consulta of consultas">
+        <mat-card-title-group>
+          <img mat-card-sm-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU" >
+          <mat-card-title>{{consulta.nome}}</mat-card-title>
+          <mat-card-subtitle>{{consulta.area}}</mat-card-subtitle>
+        </mat-card-title-group>
+        <mat-card-content>
+          <p class="date">
+            <mat-icon>today</mat-icon>
+            10 jul
+          </p>
+          <p class="hour">
+            <mat-icon>schedule</mat-icon>
+            10 hrs
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+</main>

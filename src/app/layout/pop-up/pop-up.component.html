@@ -1,0 +1,88 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">
+      <mat-icon>account_circle</mat-icon>
+      New Register
+    </h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput required [(ngModel)]='nameUser'>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="pat@example.com" required [(ngModel)]='emailUser'>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Date</mat-label>
+      <input
+      matInput
+      placeholder="00/00/0000"
+      pattern="\d{1,2}/\d{1,2}/\d{4}"
+      [(ngModel)]='dataUser'
+      required
+      >
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput required [(ngModel)]='senhaUser'>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Confirm password</mat-label>
+      <input matInput required [(ngModel)]='confirme_senhaUser'>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Typed user</mat-label>
+      <mat-select [(ngModel)]='typeUser' >
+        <mat-option
+          *ngFor="let perfil of Perfis"
+          [value]="perfil.value"
+          (click)='insertTypeArea()'
+        >
+          {{perfil.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" id="area">
+      <mat-label>Typed area</mat-label>
+      <mat-select [(ngModel)]='areaUser'>
+        <mat-option
+          *ngFor="let area of areas"
+          [value]="area.value"
+        >
+          {{area.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" id="descricao">
+      <mat-label>Descrição</mat-label>
+      <input matInput required [(ngModel)]='descricaoAdv'>
+    </mat-form-field>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Register</button>
+    <span class="warning"></span>
+  </div>
+</ng-template>
+
+<p class="register">
+  don't have an account?
+  <span  (click)="open(content)">
+    Register
+  </span>
+</p>
+

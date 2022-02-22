@@ -1,0 +1,101 @@
+{
+  "advogados": [
+    {
+      "id": 1,
+      "name": "Renato Xavier",
+      "data_nascimento": "08/08/1996",
+      "area": "direito civil",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "name": "Emanuel Nobrega",
+      "data_nascimento": "15/05/1999",
+      "area": "direito civil",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "name": "Christopher Silva",
+      "data_nascimento": "03/07/2000",
+      "area": "direito do consumidor",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "name": "Ricardo Rick",
+      "data_nascimento": "15/05/1999",
+      "area": "direito do consumidor",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "name": "Milena Vitoriono",
+      "data_nascimento": "15/05/1999",
+      "area": "direito empresarial",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "id": 6,
+      "name": "Maira Isabel",
+      "data_nascimento": "15/05/1999",
+      "area": "direito empresarial",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "id": 7,
+      "name": "Celio Ricardo",
+      "data_nascimento": "15/05/1999",
+      "area": "direito civil",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "id": 8,
+      "name": "Luiz eduardo",
+      "data_nascimento": "15/05/1999",
+      "area": "direito do consumidor",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "name": "gustavo",
+      "email": "gustavo@gmail.com",
+      "senha": "12345",
+      "data_nascimento": "03/07/2000",
+      "area": "Direito do Consumidor",
+      "id": 9
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "Maicon",
+      "email": "maicon@gmail.com",
+      "data_nascimento": "08/08/1996",
+      "senha": "12345",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "name": "emilly",
+      "email": "emilly@gmail.com",
+      "data_nascimento": "07/09/2000",
+      "senha": "12345",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "name": "teste",
+      "email": "teste@gmail.com",
+      "data_nascimento": "07/09/2000",
+      "senha": "12345",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH1A774qwkiKRK7AC0sQZXmYl09VTsIj15TFA4t_gJZJ0VcycxEgcUVKBLgK1UziWYPU&usqp=CAU"
+    },
+    {
+      "name": "cris",
+      "email": "cris@gmail.com",
+      "senha": "12345",
+      "data_nascimento": "03/07/2000",
+      "id": 3
+    }
+  ]
+}

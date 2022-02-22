@@ -1,0 +1,26 @@
+<main class="container">
+  <div class="login">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your email or name user</mat-label>
+      <input matInput placeholder="pat@example.com" required [(ngModel)]="emailLogin">
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Senha</mat-label>
+      <input type="password" matInput required [(ngModel)]="senhaLogin">
+    </mat-form-field>
+    <span class="aviso"></span>
+    <button (click)="verification()" class="login-button">
+      Login
+    </button>
+    <app-pop-up></app-pop-up>
+  </div>
+
+  <div class="advFox">
+    <img src="assets/adv.png" alt="">
+    <h2>Sign up and you will have access to a list of
+      best lawyers with ratings and comments</h2>
+  </div>
+</main>

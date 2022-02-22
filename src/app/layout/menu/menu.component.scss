@@ -1,0 +1,25 @@
+.menu{
+  display: flex;
+  position: fixed;
+
+  padding: 1rem 3rem;
+  color: #fff;
+  background-color: rgba(45,156,219,.7);
+  width: 100%;
+  top: 0;
+  z-index: 99;
+
+  img{
+    width: 4.5rem;
+    margin-right: 1.5rem;
+  }
+
+  button{
+    font-size: 1.5rem;
+  }
+
+  .user{
+    margin-left: auto;
+  }
+
+}
